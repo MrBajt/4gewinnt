@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace viergewinnt
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für PlayingField.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PlayingField : UserControl
     {
-        public MainWindow()
+        public PlayingField()
         {
             InitializeComponent();
         }
