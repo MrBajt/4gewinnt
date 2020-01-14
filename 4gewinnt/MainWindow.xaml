@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
         xmlns:local="clr-namespace:viergewinnt"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800"
@@ -19,6 +20,6 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <local:PlayingField Grid.Row="1" Grid.Column="1"></local:PlayingField>
+        <local:PlayingField Grid.Row="1" Grid.Column="1" ItemsSource="{Binding Model.Tokens}"></local:PlayingField>
     </Grid>
 </Window>

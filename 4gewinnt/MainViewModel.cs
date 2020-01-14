@@ -8,6 +8,6 @@ namespace viergewinnt
 {
     class MainViewModel
     {
-        public viergewinntModel Model;
+        public viergewinntModel Model { get; set; }
     }
 }

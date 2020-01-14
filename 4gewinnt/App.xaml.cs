@@ -21,6 +21,7 @@ namespace viergewinnt
             MainWindow window = new MainWindow();
 
             Model.Tokens.Add(new Token(new Position(4,3), Color.FromRgb(40,0,60)));
+            Model.Tokens.Add(new Token(new Position(1,2), Color.FromRgb(40, 0, 60)));
 
             window.DataContext = ViewModel;
             ViewModel.Model = Model;
